@@ -17,7 +17,7 @@ title: Chris Flannery's UX blog
 email: chriswillsflannery@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Hi! I'm Chris and I'm a designer/developer. This site was built using Jekyll + GitHub Pages.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "jekyll-UX-blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: chriswflannery
 github_username:  chriswillsflannery
