@@ -2,7 +2,7 @@
 layout: post
 title:  "UX Challenge: Be Reminded To Practice Your Instrument"
 date:   2019-02-08 14:48:23 -0500
-categories: UX
+categories: jekyll update
 ---
 
 The prompt is "Be Reminded to Practice Your Instrument." That's all we're given. No
