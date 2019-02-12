@@ -11,7 +11,7 @@ you would do something like `npm create-react-app new` in your javascript enviro
 you up and running locally. Gatsby does this, but also builds out a basic template for your homepage including a brand/navbar-type block on top,
 some content, and a footer. When you create your first Gatsby folder and `run develop` you'll see something like this:
 
-![Gatsby template](https://imgur.com/GU5ylmY "Gatsby template")
+![Gatsby template](https://i.imgur.com/GU5ylmY.png "Gatsby template")
 
 The implications of this are pretty sick - React is already fast AF and with Gatsby you can make new static sites in like 2 seconds. I could see
 this being particularly useful for blogs, portfolio sites, simple brochure type info, etc...
@@ -21,7 +21,7 @@ all your content in your `index.html` file your content is broken up into compon
 For example, if you want to make a navbar, you could create the navbar component in one file, then call it in the parent file, thereby passing it upward.
 To give you an idea, here's a way oversimplified visual representation:
 
-![React basics](https://imgur.com/qrIfSrV "React basics")
+![React basics](https://i.imgur.com/qrIfSrV.png "React basics")
 
 There's a ton of good stuff included in the Gatsby folder you just created. Components like Header, Images, Layout, and SEO are created automatically and just sitting there waiting for you to populate with whatever you want. An `index.js` file pulls information from a `layout.js` file, using components. All the
 info in each component file feeds into its respective parent file. There's a ton of options, and once you get the hang of it, the entire process is super slick and easy to understand.
