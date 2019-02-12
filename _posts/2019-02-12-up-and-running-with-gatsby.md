@@ -26,7 +26,7 @@ To give you an idea, here's a way oversimplified visual representation:
 There's a ton of good stuff included in the Gatsby folder you just created. Components like Header, Images, Layout, and SEO are created automatically and just sitting there waiting for you to populate with whatever you want. An `index.js` file pulls information from a `layout.js` file, using components. All the
 info in each component file feeds into its respective parent file. There's a ton of options, and once you get the hang of it, the entire process is super slick and easy to understand.
 
-Gatsby's dev website has a ton of plugin like google analytics and sass which you can add to your projects.
+Gatsby's dev website has a ton of plugins like google analytics and sass which you can add to your projects.
 Basically whatever functionality you need to find is right there in their database. And once you push your new
 Gatsby site to Github, from there, it's easy to deploy the site to Netlify or another host.
 I created a super simple site and deployed to Netlify for free, which you can see here:
@@ -34,6 +34,6 @@ I created a super simple site and deployed to Netlify for free, which you can se
 
 [https://pedantic-feynman-35e198.netlify.com/](https://pedantic-feynman-35e198.netlify.com/)
 
-While I was creating my first Gatsby site I was kinda bummed to find out that Atom (the text editor I'm using) supports Emmet (a plugin which makes it waaaaaay faster to write HTML) in HTML but not in JSX (JSX is basically HTML, but inside of some javascript). That's too bad, because when you're working with React files you'll be writing a lot of JSX, and it would have been super convenient to be able to do shortcuts with Emmet, like I have done in the past when writing regular HTML. I did find out, though, thatVisual Code and some other text editors do support Emmet in JSX. Poor me. Too late to switch, I've already sold my soul to Atom.
+While I was creating my first Gatsby site I was kinda bummed to find out that Atom (the text editor I'm using) supports Emmet (a plugin which makes it waaaaaay faster to write HTML) in HTML but not in JSX (JSX is basically HTML, but inside of some javascript). That's too bad, because when you're working with React files you'll be writing a lot of JSX, and it would have been super convenient to be able to do shortcuts with Emmet, like I have done in the past when writing regular HTML. I did find out, though, that Visual Code and some other text editors do support Emmet in JSX. Poor me. Too late to switch, I've already sold my soul to Atom.
 
 ALL HAIL THE GITHUB OVERLORDS but forreal Github pls make emmet compatible with JSX in Atom soon thx @github #help #me #im #needy
