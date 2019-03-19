@@ -18,22 +18,29 @@ App.js has several child components; TodoItem.js (which contains the template fo
 
 How App.js works:
 
-`import React from "react"
+```
+import React from "react"
 import TodoItem from "./TodoItem"
-import todosData from "./todosData"`
+import todosData from "./todosData"
+```
+
 React, individual To-Do template and simulated API data are imported
 
-`class App extends React.Component {
+```
+class App extends React.Component {
   constructor() {
     super()
     this.state = {
       todos: todosData
     }
     this.handleClick = this.handleClick.bind(this)
-  }`
+  }
+  ```
+
   A new React Component class called App is created. Because we are using state to pass in information from todosData, we need to include a constructor method and then call super below it (common practice). State (using the keyword 'this' because 'this' refers to information passed in from the React Component - if this was all written in an ordinary function rather than a component class, we would not need to use the 'this' keyword) is defined as an object, and this object contains the key 'todos'. This key is given a value of an array of information. In our case this array is the data being passed in from todosData in the todosData.js file. In the last line of the constructor method, we bind the function handleClick() to our constructor. This step actually happens quite a bit later on, but appears high up in the code.
 
-  `handleClick(id) {
+```
+  handleClick(id) {
     this.setState(prevState => {
       const newTodos = prevState.todos.map(todo => {
         if (todo.id === id) {
@@ -45,10 +52,13 @@ React, individual To-Do template and simulated API data are imported
         todos: newTodos
       }
     })
-  }`
+  }
+  ```
+
   handleClick() is a method we call on the component class which refers to any instance of when a user clicks on, in our case, one of the checkboxes. When the checkbox is clicked, handleClick will use the built-in function setState() to define a new state for that particular DOM item. setState() looks at the previous state of that item, and switches its state from true to false or vice versa by comparing the id of the item clicked to the corresponding id in the todosData array. It then returns the item with the switched state as part of a brand new array. In this way, any time a user clicks one of the checkboxes, React actually re-renders the entire array of checkboxes to reflect the new state.
 
-  `  render() {
+```
+  render() {
     const todoItems = this.state.todos.map(item => <TodoItem key={item.id} item={item} handleClick={this.handleClick}/>)
 
     return (
@@ -59,9 +69,10 @@ React, individual To-Do template and simulated API data are imported
   }
 }
 
-export default App`
-Every React Component has a required method called render. In it, we define a new variable todoItems which looks at the basic template for a Todo Item (as defined in TodoItem.js) and for every object in the passed-in todosData file, fills out the information in the template with the corresponding todosData data. By passing this information in as props, the TodoItem.js template can be used and re-used as needed, as many times as we want. This is part of what makes React so powerful and fast - by having a hierarchy of information where props and state are passed down as needed and information is passed up as needed, each component can have a clear, defined purpose and DOM objects are only re-rendered on a per-need basis.
+export default App
+```
 
+Every React Component has a required method called render. In it, we define a new variable todoItems which looks at the basic template for a Todo Item (as defined in TodoItem.js) and for every object in the passed-in todosData file, fills out the information in the template with the corresponding todosData data. By passing this information in as props, the TodoItem.js template can be used and re-used as needed, as many times as we want. This is part of what makes React so powerful and fast - by having a hierarchy of information where props and state are passed down as needed and information is passed up as needed, each component can have a clear, defined purpose and DOM objects are only re-rendered on a per-need basis.
 
 
 View the source code here:
